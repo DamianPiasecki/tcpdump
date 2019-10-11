@@ -10,7 +10,7 @@ pipeline {
 
       }
       steps {
-        sh '''apt install -y gcc
+        sh '''apt -y install gcc
 ./configure '''
       }
     }
