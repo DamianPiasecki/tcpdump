@@ -5,11 +5,12 @@ pipeline {
       agent {
         docker {
           image 'ubuntu'
+          args '-u 0'
         }
 
       }
       steps {
-        sh '''-u 0
+        sh '''
 apt update
 apt install gcc 
 ./configure '''
