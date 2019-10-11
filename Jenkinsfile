@@ -10,8 +10,8 @@ pipeline {
 
       }
       steps {
-        sh '''apt -y install gcc
-./configure '''
+        sh 'apt -y update'
+        sh 'apt -y install gcc make libpcap-dev'
       }
     }
   }
